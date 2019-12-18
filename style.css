@@ -1,0 +1,122 @@
+.color-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    transition: height .5s ease-in-out;
+    color: #fff;
+
+    background: linear-gradient(-45deg, #3950d3, #2e96bf, #8360c3, #ff3c00);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 30s ease infinite;
+    -moz-animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.focus-in-expand-fwd {
+    -webkit-animation: focus-in-expand-fwd 1.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand-fwd 1.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.marge-city-title {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 60px;
+}
+
+.city-title {
+    margin: unset;
+}
+
+.btn-time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.two_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+    width: 200px;
+ }
+
+ p {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+ }
+
+.marge-carousel {
+    margin: 20px 20px 100px 20px;
+    border: 20px solid #ffffff;
+    max-width: 1200px;
+    
+}
